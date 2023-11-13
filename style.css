@@ -22,7 +22,7 @@ body {
         width: 88%;
         background-color: hsl(216, 50%, 16%);
         border-radius: 15px;
-        margin: 15vh auto;
+        margin: 10vh auto;
         display: flex;
         flex-direction: column;
         box-sizing: border-box; 
@@ -71,7 +71,7 @@ body {
                 margin: auto;
             }
 
-            #equilibrium-focus:focus, #viewbox:focus {
+            #equilibrium-focus:hover, #viewbox:hover {
                 visibility: unset;
             }
 .heading {
@@ -91,21 +91,27 @@ body {
 
 }
 .eth {
-    width: 30vw;
+    align-self: flex-end;
+    text-align: start;
+    width: 20vh;
     display: flex;
     color: hsl(178, 100%, 50%);
-    justify-content: space-evenly;
+    #eth_icon {
+        margin-right: 2vh;
+    }
 }
 
 .time {
-    width: 30vw;
+    width: 20vh;
     display: flex;
     color: hsl(215, 51%, 70%);
-    justify-content: space-evenly;
+    justify-content: flex-end;
  
 }
 #clock {
     width: 20px;
+    margin-right: 1vh;
+
 }
 
 
@@ -147,7 +153,7 @@ body {
 
 
 
-@media only screen and (min-width: 177px) {
+@media only screen and (min-width: 377px) {
 
 
 
@@ -206,7 +212,7 @@ body {
                 margin: auto;
             }
 
-            #equilibrium-focus:focus, #viewbox:focus {
+            #equilibrium-focus:hover, #viewbox:hover {
                 visibility: visible;
             }
 .heading {
