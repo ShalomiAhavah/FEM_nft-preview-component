@@ -54,7 +54,7 @@ This took me 2 hours longer than anticipated but I learned a good new set of pro
 
 ### Useful resources
 
-- [resource 1](https://vercel.com/) - This helped me launch my site. It is much more user friendly than netlify.
+- [Varcel](https://vercel.com/) - This helped me launch my site. It is much more user friendly than netlify.
 
 ## Author
 
