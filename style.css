@@ -44,40 +44,39 @@ body {
 
         }
 
-        #equilibrium-focus {
-            background-color: hsl(178, 100%, 50%);
-            height: 80vw;
-            width: 76vw;
-            position: absolute;
-            margin-top: -81vw;
-            border-radius: 15px;
-            opacity: 50%;
-            display: flex;
-            visibility: hidden;
-        }
+
 
             #viewbox {
+                background-color: hsl(178, 100%, 50%);
+                border-radius: 15px;
                 height: 80vw;
                 width: 76vw;
                 position: absolute;
                 margin-top: -81vw;
-                opacity: 100%;
                 display: flex;
                 align-items: center;
-                visibility: hidden;
+                opacity: 0;
             }
 
             #view {
                 margin: auto;
+                opacity: 0;
             }
 
-            #equilibrium-focus:hover, #viewbox:hover {
-                visibility: unset;
+            #viewbox:hover {
+                opacity: 70%;
             }
+            #viewbox:hover #view{
+                opacity: 100%;
+            }
+
 .heading {
     align-self: start;
     color:white;
     margin-bottom: 0;
+}
+.heading:hover {
+    color: hsl(178, 100%, 50%);
 }
 .desc {
     color: hsl(215, 51%, 70%);
@@ -148,6 +147,9 @@ body {
     #maker-name-white {
         color: whitesmoke;
     }
+    #maker-name-white:hover {
+        color: hsl(178, 100%, 50%);
+    }
 }
 }
 
@@ -168,7 +170,7 @@ body {
         box-sizing: border-box; 
         align-items: center;
         justify-content: center;
-        padding: 1.5vh 1.5vh ;
+        padding: 3px 1.5vh ;
 
         /* box-shadow: 10px 10px hsl(217, 54%, 11%); */
 
@@ -185,40 +187,37 @@ body {
             border-radius: 15px;
         }
 
-        #equilibrium-focus {
+        #viewbox {
             background-color: hsl(178, 100%, 50%);
-            height:40vh;
-            width: 40vh;
-            margin-top: -40.5vh;
             border-radius: 15px;
-            opacity: 50%;
+            height: 40vh;
+            width: 40vh;
+            position: absolute;
+            margin-top: -40.5vh;
             display: flex;
-            visibility: hidden;
+            align-items: center;
+            opacity: 0%;
         }
 
-            #viewbox {
-                height: 40vh;
-                width: 40vh;
-                position: absolute;
-                margin-top: -40vh;
-                opacity: 100%;
-                display: flex;
-                align-items: center;
+        #view {
+            margin: auto;
+            opacity: 0;
+        }
 
-                visibility: hidden;
-            }
+        #viewbox:hover {
+            opacity: 70%;
+        }
+        #viewbox:hover #view{
+            opacity: 100%;
+        }
 
-            #view {
-                margin: auto;
-            }
-
-            #equilibrium-focus:hover, #viewbox:hover {
-                visibility: visible;
-            }
 .heading {
     align-self: start;
     color:white;
     margin-bottom: 0;
+}
+.heading:hover {
+    color: hsl(178, 100%, 50%);
 }
 .desc {
     color: hsl(215, 51%, 70%);
@@ -267,7 +266,6 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 40vh;
-    height: fit-content;
 }
 
 .maker-avatar{
@@ -288,6 +286,10 @@ body {
     #maker-name-white {
         color: whitesmoke;
     }
+    #maker-name-white:hover {
+        color: hsl(178, 100%, 50%);
+    }
 }
+
 }
 
