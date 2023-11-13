@@ -5,29 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
-  Equilibrium #3429
+  <div class="container">
+    <div class="image"> <img id="equilibrium" src="images/image-equilibrium.jpg" alt="Equilibrium"><div id="equilibrium-focus"></div><div id="viewbox"><img id="view" src="images/icon-view.svg" alt="view"></div> </div>
+    <h3 class="heading">
+      Equilibrium #3429
+    </h3>
+    <p class="desc">
+      Our Equilibrium collection promotes balance and calm.
+    </p>
 
-  Our Equilibrium collection promotes balance and calm.
+    <div class="eth_and_time">
+      <div class="eth">
+        <img id="eth_icon" src="images/icon-ethereum.svg" alt="ETH icon">
+        <span class="eth_bal">0.041 ETH</span>
+      </div>
+      <div class="time">
+        <img src="images/icon-clock.svg" alt="clcok icon" id="clock">
+        <span id="time-text">3 days left</span>
+      </div>
+    </div>
+<div id="divide">&#8232</div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+<div class="maker-credits">
+  <div class="maker-avatar"></div>
+  <span id="maker-name">Creation of <span id="maker-name-white">Jules Wyvern</span></span>
+</div>
+ 
 
+
+
+
+
+
+
+<!--
+<footer>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+</footer> -->
+
 </body>
 </html>
