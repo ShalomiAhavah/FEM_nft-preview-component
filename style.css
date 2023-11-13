@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     background: hsl(217, 54%, 11%);
-    height: 100vh;
-    width: 96vw;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     font-family: Outfit;
 }
@@ -144,3 +144,144 @@ body {
     }
 }
 }
+
+
+
+@media only screen and (min-width: 177px) {
+
+
+
+    .container {
+        height: 75vh;
+        width: 43vh;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        margin:10vh auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box; 
+        align-items: center;
+        justify-content: center;
+        padding: 1.5vh 1.5vh ;
+
+        /* box-shadow: 10px 10px hsl(217, 54%, 11%); */
+
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+
+    }
+
+        #equilibrium {
+            width: 40vh;
+            border-radius: 15px;
+        }
+
+        #equilibrium-focus {
+            background-color: hsl(178, 100%, 50%);
+            height:40vh;
+            width: 40vh;
+            margin-top: -40.5vh;
+            border-radius: 15px;
+            opacity: 50%;
+            display: flex;
+            visibility: hidden;
+        }
+
+            #viewbox {
+                height: 40vh;
+                width: 40vh;
+                position: absolute;
+                margin-top: -40vh;
+                opacity: 100%;
+                display: flex;
+                align-items: center;
+
+                visibility: hidden;
+            }
+
+            #view {
+                margin: auto;
+            }
+
+            #equilibrium-focus:focus, #viewbox:focus {
+                visibility: visible;
+            }
+.heading {
+    align-self: start;
+    color:white;
+    margin-bottom: 0;
+}
+.desc {
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+}
+
+.eth_and_time {
+    width: 40vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.eth {
+    align-self: flex-end;
+    text-align: start;
+    width: 20vh;
+    display: flex;
+    color: hsl(178, 100%, 50%);
+    #eth_icon {
+        margin-right: 2vh;
+    }
+}
+
+.time {
+    width: 20vh;
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    justify-content: flex-end;
+ 
+}
+#clock {
+    width: 20px;
+    margin-right: 1vh;
+}
+
+
+#divide {
+    width: 38vh;
+    height: 0.5px;
+    background-color: hsl(215, 51%, 70%);
+    margin: 3vh 0 2vh 0;
+}
+
+.maker-credits {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vh;
+    height: fit-content;
+}
+
+.maker-avatar{
+    width: 6vh;
+    height: 6vh;
+    background: url(images/image-avatar.png);
+    background-size: cover;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+#maker-name, #maker-name-white {
+    font-size: 16px;
+    font-weight: 600;
+}
+#maker-name {
+    color: hsl(215, 51%, 70%);
+    #maker-name-white {
+        color: whitesmoke;
+    }
+}
+}
+
